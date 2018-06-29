@@ -1,0 +1,36 @@
+/*index.html */
+
+#restaurants-list {
+  display: flex;
+  justify-content: center;
+ flex-wrap: wrap;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*=======restaurant.html==========*/
+
+.inside {
+  display: flex;
+   flex-direction: column;
+}
+
+.inside #map-container {
+  display: flex;
+  order: 2;
+ top: 130px;
+ position: relative;
+ height: 300px;
+width: 100%;
+}
+
+#reviews-list {
+  display: flex;
+  flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
