@@ -21,7 +21,7 @@
   <main id="maincontent">
     <!-- Maps -->
     <section
-    aria-labelledby
+    aria-labelledby="map"
     role="application"
     id="map-container">
       <div id="map"></div>
@@ -33,12 +33,14 @@
         <select
         id="neighborhoods-select"
         name="neighborhoods"
-        onchange="updateRestaurants()">
+        onchange="updateRestaurants()"
+        aria-labelledby="neighborhoods-select">
           <option value="all">All Neighborhoods</option>
         </select>
         <select
         id="cuisines-select"
         name="cuisines"
+        aria-labelledby="cuisines-select"
         onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
@@ -50,7 +52,7 @@
   <div id="scripts">
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js" ></script>
-  <script id="google-maps" async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script>
+ <script id="google-maps" async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script>
   </div>
 
 

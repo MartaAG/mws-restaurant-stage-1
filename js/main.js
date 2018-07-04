@@ -165,7 +165,7 @@ createRestaurantHTML = (restaurant) => {
   li.append(more)
 
   return li
-}
+};
 
 /**
  * Add markers for current restaurants to the map.
@@ -179,4 +179,22 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     });
     self.markers.push(marker);
   });
+};
+
+// Service worker
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js')
+    .then((reg) => {
+      if (reg.installing) {
+        console.log('Service worker installing');
+      } else if (reg.waiting) {
+        console.log('Service worker installed');
+      } else if (reg.active) {
+        console.log('Service worker active');
+      }
+      console.log('Registration succeded. Scope is ' + reg.scope);
+    }).catch((error) => {
+      console.log('Registration failed with' + error);
+    });
 }

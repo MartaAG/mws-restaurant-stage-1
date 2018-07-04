@@ -167,7 +167,7 @@ nav h1 a {
 }
 #restaurants-list p {
   margin: 0;
-  font-size: 11pt;
+  font-size: 12pt;
 }
 #restaurants-list li button {
   background-color: #A8D0DB;
@@ -184,7 +184,6 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -224,7 +223,7 @@ nav h1 a {
 		width: 100%;
 }
 #restaurant-address {
-  font-size: 12pt;
+  font-size: 13pt;
   margin: 10px 0px;
 }
 #restaurant-cuisine {
