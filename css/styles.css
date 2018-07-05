@@ -247,7 +247,7 @@ nav h1 a {
 #reviews-container {
   padding: 30px 40px 80px;
 }
-#reviews-container h2 {
+#reviews-container h3 {
   color: #2B4570;
   font-size: 24pt;
   font-weight: 300;
@@ -272,6 +272,13 @@ nav h1 a {
 #reviews-list li p {
   margin: 0 0 10px;
 }
+
+#reviews-list li h4 {
+	color: #2B4570;
+	padding: 10px 10px 0 0;
+	font-size: 18px;
+}
+
 #restaurant-hours td {
   color: #666;
 }
